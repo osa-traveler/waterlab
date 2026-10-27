@@ -1,0 +1,17 @@
+# Build output
+/build/
+/build-*/
+/out/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Measurement output
+*.csv
+!tests/fixtures/*.csv
+
+# Local editor workspace
+*.code-workspace
