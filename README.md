@@ -1,10 +1,22 @@
 # WaterLab
 
 4m四方の静かな水面に入力を与え、波紋の伝播・反射・減衰を観察する小さな実験環境です。
-CPU上の2D波動方程式（高さ場）で計算します。仕様は [Docs/spec/realtime_water_ripple_spec_v1.0_ja.md](Docs/spec/realtime_water_ripple_spec_v1.0_ja.md) を参照してください。
+CPU上の2D波動方程式（高さ場）で計算します。仕様は [docs/spec/realtime_water_ripple_spec_v1.0_ja.md](docs/spec/realtime_water_ripple_spec_v1.0_ja.md) を参照してください。
+
+![Phase 1 の Height 表示](docs/screenshots/2026-10-28_phase1-height-view-center-ripple.png)
 
 > **現在の実装状況：Phase 1（2D波紋）まで。** 3D水面描画（Phase 2）、球体（Phase 4）は未実装です。
-> 進捗と検証結果は [Docs/validation.md](Docs/validation.md)、設計判断は [Docs/decisions.md](Docs/decisions.md) にあります。
+
+## ドキュメント
+
+| ファイル | 内容 |
+|---|---|
+| [docs/RENDERING_GUIDE.md](docs/RENDERING_GUIDE.md) | 技術解説（なぜそうするのか。式の意味と実測の数値） |
+| [docs/WORKLOG.md](docs/WORKLOG.md) | 日々の作業記録 |
+| [docs/validation.md](docs/validation.md) | Phase ごとの検証結果 |
+| [docs/decisions.md](docs/decisions.md) | 仕様書にない点・変えた点の判断と理由 |
+| [docs/WORKFLOW.md](docs/WORKFLOW.md) | 進め方のルール |
+| [docs/THIRD_PARTY.md](docs/THIRD_PARTY.md) | 依存ライブラリ（raylib）とライセンス |
 
 ## 動作環境
 
@@ -103,5 +115,9 @@ src/rendering   raylib資源のRAII、Height表示
 src/app         エントリポイント、操作・数値表示
 tests           依存なしのテストハーネスと数値テスト
 tools           ヘッドレスベンチマーク
-Docs            仕様書、設計判断、検証記録
+docs            仕様書、技術解説、作業記録、設計判断、検証記録
 ```
+
+## ライセンス
+
+[MIT](LICENSE)。依存ライブラリのライセンスは [docs/THIRD_PARTY.md](docs/THIRD_PARTY.md) を参照してください。

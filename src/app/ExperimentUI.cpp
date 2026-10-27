@@ -17,7 +17,7 @@ constexpr float kWaveSpeedStep = 0.1f, kWaveSpeedMin = 0.1f, kWaveSpeedMax = 5.0
 constexpr float kDampingStep = 0.05f, kDampingMin = 0.0f, kDampingMax = 3.0f;
 constexpr float kStrengthStep = 0.05f, kStrengthMin = 0.05f, kStrengthMax = 1.0f;
 // Height表示の色範囲（m）。仕様書7.4の±0.05mは既定クリックの波高（数mm以下）では
-// ほぼ白になるため、既定を±0.001mとし切替可能にした（Docs/decisions.md D09）。
+// ほぼ白になるため、既定を±0.001mとし切替可能にした（docs/decisions.md D09）。
 constexpr float kHeightRanges[] = {0.0005f, 0.001f, 0.002f, 0.005f, 0.01f, 0.02f, 0.05f};
 constexpr int kHeightRangeCount = int(sizeof(kHeightRanges) / sizeof(kHeightRanges[0]));
 constexpr int kDefaultHeightRange = 1;

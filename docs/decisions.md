@@ -5,8 +5,8 @@
 ## D01 リポジトリ配置と docs/ ディレクトリ（2026-10-28）
 
 - 既存の作業フォルダ `water/` をリポジトリのルートとした（仕様書の `WaterLab/` に相当）。
-- 仕様書 §10 は `docs/` としているが、macOS の既定ファイルシステムは大文字小文字を区別しないため、既存の `Docs/` と同じディレクトリになる。既存の `Docs/` をそのまま使う。
-- 仕様書は既存の `Docs/spec/realtime_water_ripple_spec_v1.0_ja.md` に置いたままとし、`specification_v1.0_ja.md` への複製は作らない。二重管理を避けるため。
+- 仕様書は `docs/spec/realtime_water_ripple_spec_v1.0_ja.md` に置き、`docs/specification_v1.0_ja.md` への複製は作らない。二重管理を避けるため。
+- （訂正 2026-10-28）当初は既存の `Docs/`（大文字）をそのまま使っていた。macOS の既定ファイルシステムは大文字小文字を区別しないため、仕様書の `docs/` と同じフォルダになるからである。しかし GitHub は大文字小文字を区別するので、仕様書と先行プロジェクト（Raytracer）に合わせて `docs/` に改名した。
 
 ## D02 raylibの固定方法
 
